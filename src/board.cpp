@@ -109,8 +109,8 @@ string Board::getSolutionString() const {
     string output = "";
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            if (queens[i] == j) output += "Q"; 
-            else output += ".";                
+            if (queens[i] == j) output += "#"; 
+            else output += regionMap[i][j];                
         }
         output += "\n";
     }
